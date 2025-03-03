@@ -1,8 +1,7 @@
-import streamlit as st
 import openai
+import streamlit as st
 
-# Initialize OpenAI client with API key
-client = openai.OpenAI(api_key="tsk-proj-cYF3Q45QsDvfgYVSWjYwSSY_4K_gszOJALqrL3Qo8s9T6k0zYxwLQpSaAkh4D7s9NFTDXPVbl6T3BlbkFJzHFZxX_twGmTcozAwHyL0CEHbUsMaeCBX_u0MaAiN-iRhQk9SK4oXQPJqx9P5ldr_bSYHcJUYA")  # Replace with your actual OpenAI API key
+client = openai.OpenAI(api_key=st.secrets["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"])# Replace with your actual OpenAI API key
 
 # Streamlit UI
 st.title("Chat with GPT-4")
